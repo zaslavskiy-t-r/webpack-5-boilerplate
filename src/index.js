@@ -1,6 +1,8 @@
 // Test import of a JavaScript module
 import { example } from '@/js/example'
 
+import "js/alert"
+
 // Test import of an asset
 import webpackLogo from '@/images/webpack-logo.svg'
 

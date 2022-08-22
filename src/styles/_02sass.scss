@@ -1,0 +1,55 @@
+
+
+.item {
+    width: 500px;
+    height: 500px;
+    background-color: #dde77b;
+    margin: 50px auto;
+    border: 2px solid #ff0008;
+
+    h2 {
+        text-align: right;
+        color: greenyellow;
+    }
+
+    .container {
+        width: 400px;
+        height: 300px;
+
+        //Вложенность множественных свойств
+        border: {
+            top: 13px solid #3ef502;
+            bottom: 23px dashed blue;
+            left: 15px double orange;
+            right: 3px dotted green;
+        }
+
+        margin: 20px auto;
+
+        h1 {
+            text-align: center;
+            color: rgba(230, 50, 50, 0.86);
+        }
+
+        .lead {
+            font-size: 10px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: tomato;
+            border-radius: 30%;
+            border: 2px solid blue;
+           //Для расширения используется синтаксис - &
+            // & - обращение к родительскому элементу
+            &:hover {
+                border: none;
+                color: hsl(0, 9%, 75%);
+                padding-left: 30px;
+                font-size: 2rem;
+            }
+        }
+    }
+}
